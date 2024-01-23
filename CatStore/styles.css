@@ -1,0 +1,619 @@
+/* styles.css */
+/* He pedido que me de cosas chatgpt ahora */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('fondo.jpg');
+    background-size: cover; 
+    background-position: center center; 
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* Agrega box-sizing para que el padding y el borde no afecten el tamaño total */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #555;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 14px 16px;
+    text-decoration:underline;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    height: 100%; /* Asegura que el footer ocupe el 100% del contenedor principal */
+    box-sizing: border-box; /* Agrega box-sizing para que el padding y el borde no afecten el tamaño total */
+}
+
+/*CrearBD*/
+
+.container-crear {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    color: #40ff06; /* Ajusta el color del texto según tus preferencias */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+form {
+    margin-top: 20px; /* Add some spacing above the form */
+}
+
+input[type="submit"]  {
+    margin-top: 170px; /* Espacio adicional encima del botón */
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/*Contacto.php*/
+
+.container-contacto {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    color: #ff0644; /*color texto abajo*/
+    font-weight: bold;
+}
+
+
+.container-contacto input[type="submit"]  {
+    margin-top: 120px; /* Espacio adicional encima del botón */
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-contacto input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.container-contacto form {
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px; /* Establece un ancho máximo para el formulario */
+    margin: auto;
+    background: linear-gradient(to bottom, #7e7c7c, #cdceca);
+}
+
+.contacto-label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #4ef700;
+}
+
+form input[type="text"], form input[type="email"] {
+    width: 100%;
+    padding: 8px 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    width: 100%;
+    padding: 8px 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.container-contacto form input[type="text"]::placeholder,
+.container-contacto form textarea::placeholder {
+    text-align: center; /* Centra el placeholder en los campos de texto */
+}
+
+.container-contacto form input[type="text"],
+.container-contacto form textarea {
+    text-align: center; /* Centra el texto ingresado en los campos de texto */
+}
+
+/*Mensaje.html*/
+
+.mensaje-mensaje {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px; /* Tamaño fijo en píxeles */
+    color: #4CAF50;
+    text-align: center;
+    padding: 15px; /* Tamaño fijo en píxeles */
+    margin-bottom: 20px; /* Ajusta los píxeles según la separación deseada */
+}
+
+#mensaje-container-mensaje {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px; /* Tamaño fijo en píxeles */
+    color: #065dff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*Inicio.php*/
+
+.container-login {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #7e7c7c, #cdceca); /* Colores degradados que desees */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+.container-login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-login label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.container-login input {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.container-login input[type="submit"] {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.container-login input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.container-login p {
+    margin-top: 15px;
+}
+
+.container-login a {
+    color: #065dff;
+    text-decoration: underline;
+}
+
+/*Registro.php*/
+.container-registrarse {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #7e7c7c, #cdceca); /* Colores degradados que desees */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+.container-registrarse form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-registrarse label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.container-registrarse input,
+.container-registrarse select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    text-align: center; /* Añadido para centrar el texto en los campos */
+}
+
+.container-registrarse input[type="submit"] {
+    background-color: #065dff;
+    color: white;
+    cursor: pointer;
+}
+
+.container-registrarse input[type="submit"]:hover {
+    background-color: #0346a2;
+}
+
+.container-registrarse p {
+    margin-top: 15px;
+}
+
+.container-registrarse a {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+/* Estilos específicos para mejorar la presentación de los campos */
+.container-registrarse label,
+.container-registrarse input,
+.container-registrarse select {
+    width: 100%;
+    max-width: 300px; /* Ajusta el ancho máximo según tus preferencias */
+}
+
+/* Separación del campo "Región" */
+.container-registrarse label[for="region"] {
+    margin-top: 20px;
+}
+
+/* Estilos para el mensaje de éxito */
+.registro-mensaje-exito {
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+    padding: 8px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Estilos para el mensaje de error */
+.registro-mensaje-error {
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+    padding: 8px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+/*Registro.html*/
+.registro-mensaje {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px; /* Tamaño fijo en píxeles */
+    color: #4CAF50;
+    text-align: center;
+    padding: 15px; /* Tamaño fijo en píxeles */
+    margin-bottom: 20px; /* Ajusta los píxeles según la separación deseada */
+}
+
+#registro-container-mensaje {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px; /* Tamaño fijo en píxeles */
+    color: #065dff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.contrasena-container {
+    position: relative;
+}
+
+
+
+/* Estilo del icono de mostrar/ocultar contraseña */
+.toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+/* Inicio.php */
+.container-login-inicio {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #7e7c7c, #cdceca);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%; /* Ajusta el ancho del contenedor */
+}
+
+.container-login-inicio form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px; /* Ajusta el ancho máximo del formulario */
+    margin: auto; /* Centrar el formulario en el contenedor */
+}
+
+.container-login-inicio label {
+    margin-top: 10px;
+}
+
+.container-login-inicio input {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    text-align: center; /* Centra el texto en los input */
+}
+
+.container-login-inicio input[type="submit"] {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.container-login-inicio input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.container-login-inicio p {
+    margin-top: 15px;
+}
+
+.container-login-inicio a {
+    color: #065dff;
+    text-decoration: underline;
+}
+
+.container-login-inicio form input[type="text"]::placeholder,
+.container-login-inicio form input[type="password"]::placeholder {
+    text-align: center; /* Centra el placeholder en los input */
+}
+/* Mensajes Inicio.php*/
+/* Estilo existente */
+
+
+/* Estilos para los mensajes de éxito y error */
+.success, .error {
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration:underline;
+    font-weight: bold;
+}
+
+/* Estilos adicionales para mensajes específicos */
+.iniciar-sesion {
+    background-color: #00ff15; /* Fondo azul claro */
+    color: #000000;
+}
+
+.cerrar-sesion {
+    background-color: #eeff00; /* Fondo amarillo */
+    color: #000000;
+}
+
+.dni-incorrecto {
+    background-color: #ff0000; /* Fondo rosa claro */
+    color: #000000;
+}
+
+.sesion-activa { 
+    background-color: #ff9100; /* Fondo naranja claro */
+    color: #000000;
+}
+/*TIENDA*/
+
+/* Estilos para el contenedor de productos */
+.container-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #7e7c7c, #cdceca);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+/* Estilos para cada producto individual */
+.producto {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.producto h2 {
+    color: #333;
+}
+
+.producto p {
+    color: #555;
+}
+
+/* Estilos para el botón de añadir al carrito */
+.producto button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.producto button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para el selector de categorías */
+.categoria-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 0 auto;
+    background-color: #ddd;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.categoria-selector form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.categoria-selector label,
+.categoria-selector select,
+.categoria-selector input[type="submit"],
+.cantidad-input {
+    margin: 0;
+}
+
+/* Estilo específico para el botón de filtrar */
+.boton-filtrar {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.boton-filtrar:hover {
+    background-color: #45a049;
+}
+
+
+/* Carrito.php */
+
+.container-carrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #7e7c7c, #cdceca);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+.carrito-producto {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el contenido del producto */
+    margin-bottom: 20px;
+}
+
+.carrito-producto h2 {
+    color: #333;
+}
+
+.carrito-producto p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.cantidad-carrito {
+    font-weight: bold;
+}
+
+.total-carrito {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.carrito-vacío {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff0000; /* Color rojo para resaltar */
+    margin-top: 20px;
+}
+
+/* Botones de acción en el carrito */
+.carrito-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.carrito-buttons button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carrito-buttons button:hover {
+    background-color: #45a049;
+}
+
+
+
+.producto-carrito {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}

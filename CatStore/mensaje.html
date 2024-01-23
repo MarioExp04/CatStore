@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactar</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div class="mensaje-mensaje">
+        Tu mensaje ha sido enviado con éxito.
+    </div>
+    
+    <div id="mensaje-container-mensaje">
+        <form action="" method="post" onsubmit="return redirectToCrearBD()">
+            <input type="submit" name="regresar" value="Regresar a contacto">
+        </form>
+
+<!-- Aqui uso algo de javascript para que funcione, gracias ChatGpt --> 
+        <script>
+            function redirectToCrearBD() {
+
+                window.location.href = "contacto.php";
+                return false; 
+            }
+        </script>
+    </div>
+    
+
+<footer>
+    &copy; 2024 CatStore
+</footer>
+
+</body>
+</html>
